@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "F.C. BARCELONA";
+  font-style: normal;
+  font-weight: normal;
+  src: local("F.C. BARCELONA"),
+    url("../font/fc-barcelona-webfont/barselona.woff") format("woff");
+
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: local("helvetica"),
+    url("../font/helvetica-255/helvetica-light-587ebe5a59211.ttf")
+      format("woff");
+
+  font-family: "helvetica-neue";
+  font-style: normal;
+  font-weight: normal;
+  src: local("helvetica-neue"),
+    url("../font/helvetica-neue-5/HelveticaNeueBlack.otf") format("woff");
+}
+
+.box {
+  position: relative;
+  background: white;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(to right, #0018b4, #9b0041);
+  z-index: 1;
+  filter: blur(30px);
+}
+
+.instragram {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d);
+}
+
+/* For Image player */
+.boxPlayers {
+  position: relative;
+  /* background: white; */
+}
+
+.boxPlayers::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(to bottom, #1a193a, black);
+  filter: blur(3px);
+  opacity: 80%;
+}
